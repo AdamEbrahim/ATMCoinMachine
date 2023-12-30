@@ -1,5 +1,24 @@
 # ATM Coin Machine
-This repository contains all code related to a functioning Coin ATM created as a final project in ECE 350 at Duke University. The ATM supports different accounts, each accessed through entering a unique 4-digit pin, viewing current account balance, depositing coins, and withdrawing coins with error checking (in case of insufficient balance).
+This repository contains all code related to a functioning Coin ATM created as a final project in ECE 350 at Duke University. The ATM supports different accounts accessible by entering a unique 4-digit pin, viewing current account balance, and depositing/withdrawing coins (along with error checking in case of insufficient balance). A video of the ATM in action is shown below: 
+
+
+
+https://github.com/AdamEbrahim/ATMCoinMachine/assets/110650531/b5d238b4-5405-41a9-8a0e-f05fcb8a8726
+
+Various images of the wiring and mechanical components of the device are shown below:
+
+<img width="318" alt="atmstuff2" src="https://github.com/AdamEbrahim/ATMCoinMachine/assets/110650531/170ad19b-4a8c-4335-b401-3aed6129e2ce">
+
+<img width="318" alt="IMG_0831" src="https://github.com/AdamEbrahim/ATMCoinMachine/assets/110650531/b07655ef-06c6-4688-861a-8ec9b8b18443">
+
+<img width="318" alt="IMG_0833" src="https://github.com/AdamEbrahim/ATMCoinMachine/assets/110650531/d22b05e3-dc3d-4d90-98af-ada985bd5f72">
+
+<img width="318" alt="IMG_0825" src="https://github.com/AdamEbrahim/ATMCoinMachine/assets/110650531/cbd8604a-af12-4723-af6e-3773333bcf4d">
+
+<img width="318" height="425" alt="atmstuff3" src="https://github.com/AdamEbrahim/ATMCoinMachine/assets/110650531/fecb5bc6-ae25-4e63-b6bc-c3ee112cefc1">
+
+<img width="318" alt="atmstuff" src="https://github.com/AdamEbrahim/ATMCoinMachine/assets/110650531/2bbf69f5-2848-4406-a31b-bf26b7756ddc">
+
 
 To control this device, a Nexys A7-100T FPGA was programmed with a 5-stage pipelined CPU written entirely from scratch in Verilog, designed to operate at a 50 MHz clock speed. The FPGA also contained 4 KB of word-addressed RAM for the CPU to access, and MMIO was used to perform various device I/O. Different peripheral devices for this project included servos, beam break sensors, a keypad, LEDs, and a seven-segment display. The assembly program that controls the coin ATM through its various states was written in MIPS.   
 
